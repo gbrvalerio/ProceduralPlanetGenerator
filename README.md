@@ -51,6 +51,9 @@ let earthLikePlanetTexture = PlanetGenerator.generateTexture(side: 32, userPalet
 ```
 
 ## Considerations
+#### Yes, I know, the Playground is slow
+When running the code on a non-playground project, it runs muuuuuuuch faster. Do not worry!
+
 The Perlin noise is a very good noise for creating terrains textures but its not the most recommended actually. OpenSimplex is based on Perlin noise and has a faster processing. If you want to, you should check it out, I strogly recommend that.
 
 If you wants the Data (bitmap format) object instead of a SKTexture as return of the function ```generateTexture``` this simple two-line change at the end of the function will solve your problem:
